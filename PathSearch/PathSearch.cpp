@@ -111,10 +111,9 @@ namespace fullsail_ai { namespace algorithms {
 
 	void PathSearch::update(long timeslice)
 	{
-		std::cout << iterations++ << std::endl;
+		//std::cout << iterations++ << std::endl;
 
 		//get current node
-		PlannerNode* current;
 #if BreadthFirst
 		current = q.front();
 		q.pop();
@@ -131,7 +130,7 @@ namespace fullsail_ai { namespace algorithms {
 		//std::cout << "-------------------------" << std::endl;
 
 		//handle goal reached
-		PlannerNode* temp = current;
+		temp = current;
 		if (temp->searchNode->tile == goal) {
 			//build solution vector
 			while (temp != nullptr) {
@@ -143,27 +142,30 @@ namespace fullsail_ai { namespace algorithms {
 			done = true;
 		}
 
+		std::vector<SearchNode*> neighbors = current->searchNode->neighbors;
+
 		if (!done) {
-			for (int i = 0; i < current->searchNode->neighbors.size(); i++) {
-				if (current->searchNode->neighbors[i]->tile->getWeight() != 0) {
+			for (int i = 0; i < neighbors.size(); i++) {
+				if (neighbors[i]->tile->getWeight() != 0) {
 					//draw each neighbor being checked
-					current->searchNode->neighbors[i]->tile->setOutline(0xffff8080);
+					neighbors[i]->tile->setOutline(0xffff8080);
+					Tile* t = neighbors[i]->tile;
 
 #if !BreadthFirst
-					double newCost = GetCost(current->searchNode->neighbors[i]->tile, goal);
+					double newCost = GetCost(t, goal);
 
 #if Astar
 					newCost *= HeuristicWeight;
 #endif
 #endif
 #if UniformCost
-					double newGivenCost = current->givenCost + (GetCost(current->searchNode->neighbors[i]->tile, current->searchNode->tile) * current->searchNode->neighbors[i]->tile->getWeight());
+					double newGivenCost = current->givenCost + (GetCost(t, current->searchNode->tile) * t->getWeight());
 #endif
 
-					if (visited.count(current->searchNode->neighbors[i]) == 0) {
-						PlannerNode* newNode = new PlannerNode();
+					if (visited.count(neighbors[i]) == 0) {
+						newNode = new PlannerNode();
 						newNode->parent = current;
-						newNode->searchNode = current->searchNode->neighbors[i];
+						newNode->searchNode = neighbors[i];
 						visited[newNode->searchNode] = newNode;
 #if BreadthFirst
 						q.push(newNode);
@@ -183,7 +185,7 @@ namespace fullsail_ai { namespace algorithms {
 					}
 #if UniformCost
 					else {
-						PlannerNode* node = visited[current->searchNode->neighbors[i]];
+						node = visited[neighbors[i]];
 
 						if (node->finalCost > newGivenCost + node->cost) {
 							node->givenCost = newGivenCost;
@@ -194,7 +196,7 @@ namespace fullsail_ai { namespace algorithms {
 #endif
 
 							bool check = false;
-							std::vector<PlannerNode*> tNodes;
+							tNodes;
 							pq.enumerate(tNodes);
 
 							for (int i = 0; i < tNodes.size(); i++) {
@@ -239,7 +241,7 @@ namespace fullsail_ai { namespace algorithms {
 		unsigned int color = 0xff00ff00;
 
 #if BreadthFirst
-		std::queue<PlannerNode*> drawq = q;
+		drawq = q;
 		while (!drawq.empty()) {
 			color = (255 << 24) + (0 << 16) + (255 - (counter * 20) << 8) + (0);
 			drawq.front()->searchNode->tile->setMarker(color);
@@ -248,14 +250,17 @@ namespace fullsail_ai { namespace algorithms {
 		}
 #endif
 #if !BreadthFirst
-		std::vector<PlannerNode*> drawq;
-		pq.enumerate(drawq);
-		for (int i = drawq.size() - 1; i >= 0; i--) {
+		pq.enumerate(tNodes);
+		for (int i = tNodes.size() - 1; i >= 0; i--) {
 			color = (255 << 24) + (0 << 16) + (255 - (counter * 20) << 8) + (0);
-			drawq[i]->searchNode->tile->setMarker(color);
+			tNodes[i]->searchNode->tile->setMarker(color);
 			counter++;
 		}
 #endif
+
+		if (done) {
+			int x = 0;
+		}
 	}
 
 	void PathSearch::exit()

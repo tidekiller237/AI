@@ -1,0 +1,11 @@
+﻿  PathSearch.cpp
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\PathSearch\PathSearch.cpp(136,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\PathSearch\PathSearch.cpp(205,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\PathSearch\PathSearch.cpp(232,64): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
+     Creating library C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\Release\PathSearch.lib and object C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\Release\PathSearch.exp
+  Generating code
+  231 of 758 functions (30.5%) were compiled, the rest were copied from previous compilation.
+    111 functions were new in current compilation
+    72 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  PathSearch.vcxproj -> C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\Release\PathSearch.dll

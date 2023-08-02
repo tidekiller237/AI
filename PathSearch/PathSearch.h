@@ -92,6 +92,12 @@ namespace fullsail_ai { namespace algorithms {
 		};
 		PriorityQueue < PlannerNode*, comp> pq;
 		std::vector<Tile const*> sln;
+		PlannerNode* current;
+		PlannerNode* temp;
+		PlannerNode* newNode;
+		PlannerNode* node;
+		std::vector<PlannerNode*> tNodes;
+		std::queue<PlannerNode*> drawq;
 
 	public:
 		//! \brief Default constructor.
