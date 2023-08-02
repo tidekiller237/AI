@@ -1,6 +1,0 @@
-﻿  PathSearch.cpp
-C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\PathSearch\PathSearch.cpp(148,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\PathSearch\PathSearch.cpp(202,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\PathSearch\PathSearch.cpp(229,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\PathSearch\PathSearch.cpp(255,64): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
-  PathSearch.vcxproj -> C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\B - Path Planner\Project\Debug\PathSearch.dll
