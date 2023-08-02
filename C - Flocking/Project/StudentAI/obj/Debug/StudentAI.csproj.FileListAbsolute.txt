@@ -1,0 +1,18 @@
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\SudentAI.dll
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\SudentAI.pdb
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\CoreAI.dll
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\CoreAI.pdb
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\StudentAI.csproj.AssemblyReference.cache
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\StudentAI.csproj.CoreCompileInputs.cache
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\StudentAI.csproj.CopyComplete
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\SudentAI.dll
+C:\Users\mtjarks\Desktop\afitest\artificial-intelligence-course\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\SudentAI.pdb
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\SudentAI.dll
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\SudentAI.pdb
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\CoreAI.dll
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\bin\Debug\CoreAI.pdb
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\StudentAI.csproj.AssemblyReference.cache
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\StudentAI.csproj.CoreCompileInputs.cache
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\StudentAI.csproj.CopyComplete
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\SudentAI.dll
+C:\Users\tidek\Documents\__FullSail\Work\C24 AI\AIMaterial\Lab Projects\C - Flocking\Project\StudentAI\obj\Debug\SudentAI.pdb
